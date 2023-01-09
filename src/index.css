@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -15,4 +16,8 @@
         url("https://images.pexels.com/photos/159872/book-open-pages-literature-159872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+#title {
+    font-family: 'Secular One', sans-serif;
 }
