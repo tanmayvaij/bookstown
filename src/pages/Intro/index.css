@@ -1,0 +1,66 @@
+#landing_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 0 30px;
+}
+
+#landing_page>* {
+    padding: 30px 0;
+}
+
+#button_group {
+    display: flex;
+    flex-direction: column;
+}
+
+#buy_btn {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+#buy_btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#sell_btn {
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+#sell_btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#landing_bottom {
+    width: 16rem;
+}
+
+#brand {
+    width: 19rem;
+}
