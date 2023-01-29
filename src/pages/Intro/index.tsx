@@ -1,48 +1,44 @@
-import { IonContent, IonHeader, IonPage } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
+import { useHistory } from 'react-router';
 import './index.css';
 
 const Intro: React.FC = () => {
-  return (
-    <IonPage>
 
-      {/* <IonHeader>
+	const history = useHistory()
 
-        <IonToolbar>
-          <IonTitle>Bookstown</IonTitle>
-        </IonToolbar>
+	return (
+		<IonPage>
 
-      </IonHeader> */}
+			<IonContent fullscreen>
+				<div id='landing_page'>
 
-      <IonContent fullscreen>
-        <div id='landing_page'>
+					<div>
 
-          <div>
+						<img id='brand' src="assets/brand.png" alt="" />
 
-              <img id='brand' src="assets/brand.png" alt="" />
+						<p>Best place for buying and selling second hand books.</p>
 
-              <p>Best place for buying and selling second hand books.</p>
+					</div>
 
-          </div>
+					<div id='button_group'>
 
-          <div id='button_group'>
+						<button id='buy_btn' onClick={() => history.push("/buyer_login")}>
+							Start Buying
+						</button>
 
-              <button id='buy_btn'>    
-                  Start Buying
-              </button>
+						<button id='sell_btn' onClick={() => history.push("/seller_login")}>
+							Start Selling
+						</button>
 
-              <button id='sell_btn'>    
-                  Start Selling
-              </button>
+					</div>
 
-          </div>
+					<img id='landing_bottom' src="assets/landing-img.png" alt="" />
 
-          <img id='landing_bottom' src="assets/landing-img.png" alt="" />
+				</div>
+			</IonContent>
 
-        </div>
-      </IonContent>
-
-    </IonPage>
-  );
+		</IonPage>
+	);
 };
 
 export default Intro;

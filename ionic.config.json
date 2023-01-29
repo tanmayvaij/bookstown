@@ -1,7 +1,7 @@
 {
-  "name": "bookstown-frontend",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
+	"name": "bookstown-frontend",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "react"
 }

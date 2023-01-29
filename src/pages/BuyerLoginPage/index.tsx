@@ -1,25 +1,30 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-// import ExploreContainer from '../components/ExploreContainer';
+import { IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './index.css';
 
-const Intro: React.FC = () => {
-  return (
-    <IonPage>
+const BuyerLoginPage: React.FC = () => {
+	return (
+		<IonPage>
 
-      <IonHeader>
+			<IonHeader>
 
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
+				<IonToolbar>
 
-      </IonHeader>
+					<IonTitle>Buyer Login</IonTitle>
 
-      <IonContent fullscreen>
-        {/* <ExploreContainer /> */}
-      </IonContent>
+                    <IonButtons slot="end">
+                        <IonBackButton></IonBackButton>
+                    </IonButtons>
 
-    </IonPage>
-  );
+				</IonToolbar>
+
+			</IonHeader>
+
+			<IonContent fullscreen>
+
+			</IonContent>
+
+		</IonPage>
+	);
 };
 
-export default Intro;
+export default BuyerLoginPage;
