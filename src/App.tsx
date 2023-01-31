@@ -25,7 +25,7 @@ import './theme/variables.css';
 import Context from './context';
 
 // Importing pages
-import Intro from './pages/Intro';
+import IntroPage from './pages/IntroPage';
 import SellerLoginPage from './pages/SellerLoginPage';
 import SellerRegistrationPage from './pages/SellerRegistrationPage';
 import BuyerLoginPage from './pages/BuyerLoginPage';
@@ -44,7 +44,7 @@ const App: React.FC = () => (
 					</Route>
 
 					<Route exact path="/intro">
-						<Intro />
+						<IntroPage />
 					</Route>
 
 					<Route exact path="/seller_login">

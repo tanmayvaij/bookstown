@@ -1,5 +1,5 @@
-import { IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './index.css';
+import { IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
+import './index.css'
 
 const BuyerRegistrationPage: React.FC = () => {
 	return (
@@ -23,7 +23,7 @@ const BuyerRegistrationPage: React.FC = () => {
 			</IonContent>
 
 		</IonPage>
-	);
-};
+	)
+}
 
-export default BuyerRegistrationPage;
+export default BuyerRegistrationPage

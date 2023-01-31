@@ -1,6 +1,5 @@
 import { 
-    IonBackButton, 
-    IonButton, 
+    IonBackButton,
     IonButtons, 
     IonContent, 
     IonHeader, 
@@ -37,7 +36,7 @@ const SellerLoginPage: React.FC = () => {
 
     return (
         <IonPage>
-0
+
             <IonHeader>
                 <IonToolbar>
 
@@ -78,4 +77,4 @@ const SellerLoginPage: React.FC = () => {
     )
 }
 
-export default SellerLoginPage;
+export default SellerLoginPage
