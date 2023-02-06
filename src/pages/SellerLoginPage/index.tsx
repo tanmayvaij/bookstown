@@ -70,6 +70,8 @@ const SellerLoginPage: React.FC = () => {
 
                     <button id='login_btn'>Login</button>
 
+                    <a href="https://www.google.com">Not having account ? Sign Up</a>
+
                 </div>
             </IonContent>
 
