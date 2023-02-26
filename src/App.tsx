@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -21,53 +22,21 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-// Context imported
-import Context from './context';
-
-// Importing pages
-import IntroPage from './pages/IntroPage';
-import SellerLoginPage from './pages/SellerLoginPage';
-import SellerRegistrationPage from './pages/SellerRegistrationPage';
-import BuyerLoginPage from './pages/BuyerLoginPage';
-import BuyerRegistrationPage from './pages/BuyerRegistrationPage';
-
 setupIonicReact();
 
 const App: React.FC = () => (
-	<IonApp>
-		<Context>
-			<IonReactRouter>
-				<IonRouterOutlet>
-
-					<Route exact path="/">
-						<Redirect to="/intro" />
-					</Route>
-
-					<Route exact path="/intro">
-						<IntroPage />
-					</Route>
-
-					<Route exact path="/seller_login">
-						<SellerLoginPage />
-					</Route>
-
-					<Route exact path="/seller_registration">
-						<SellerRegistrationPage />
-					</Route>
-
-					<Route exact path="/buyer_login">
-						<BuyerLoginPage />
-					</Route>
-
-					<Route exact path="/buyer_registration">
-						<BuyerRegistrationPage />
-					</Route>
-
-
-				</IonRouterOutlet>
-			</IonReactRouter>
-		</Context>
-	</IonApp>
+  <IonApp>
+    <IonReactRouter>
+      <IonRouterOutlet>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+      </IonRouterOutlet>
+    </IonReactRouter>
+  </IonApp>
 );
 
 export default App;
