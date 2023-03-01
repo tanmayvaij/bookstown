@@ -13,8 +13,6 @@ const Intro: React.FC = () => {
 
                     <IonTitle>Intro</IonTitle>
 
-
-
                 </IonToolbar>
             </IonHeader>
 
