@@ -5,6 +5,6 @@ const config: CapacitorConfig = {
   appName: 'bookstown',
   webDir: 'build',
   bundledWebRuntime: false
-};
+}
 
 export default config
